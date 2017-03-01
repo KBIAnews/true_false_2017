@@ -1,6 +1,19 @@
 {% extends 'films/base.html' %}
 
 {% block content %}
-<h1>{{ object.title }}</h1>
-<h2>Testing</h2>
+        <div class="leader-image-contain">
+            <div class="leader-image-contents">
+                <img class="leader-image-img" src="{{ object.image.url }}" alt="{{ object.title }}">
+            </div>
+            <div class="leader-image-gradient">
+
+            </div>
+        </div>
+
+    <div class="float-above-leader">
+            <h1>{{ object.title }}</h1>
+    </div>
+
+
+
 {% endblock %}

@@ -1,0 +1,28 @@
+$gradient-transition-point: 80%;
+
+div.leader-image-contain{
+  width: 100%;
+}
+div.leader-image-contents{
+  background-color: $gray-dark;
+}
+div.leader-image-gradient{
+    position:absolute;
+    z-index:2;
+    right:0; bottom:0; left:0;
+    height:300px;
+    background: none;
+    background: -moz-linear-gradient(top,  rgba(41,43,44,0) 0%, rgba(41,43,44,1) $gradient-transition-point);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(41,43,44,0)), color-stop($gradient-transition-point,rgba(41,43,44,1)));
+    background: -webkit-linear-gradient(top,  rgba(41,43,44,0) 0%,rgba(41,43,44,1) $gradient-transition-point);
+    background: -o-linear-gradient(top,  rgba(41,43,44,0) 0%,rgba(41,43,44,1) $gradient-transition-point);
+    background: -ms-linear-gradient(top,  rgba(41,43,44,0) 0%,rgba(41,43,44,1) $gradient-transition-point);
+    background: linear-gradient(to bottom,  rgba(41,43,44,0) 0%,rgba(41,43,44,1) $gradient-transition-point);
+}
+img.leader-image-img{
+  max-width:100%;
+}
+
+div.float-above-leader{
+  z-index: 10;
+}

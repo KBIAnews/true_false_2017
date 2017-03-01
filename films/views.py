@@ -8,3 +8,7 @@ from .models import Film
 class FilmListView(BuildableListView):
     queryset = Film.objects.all()
     model = Film
+
+class FilmDetailView(BuildableDetailView):
+    model = Film
+    template_name = 'films/film_detail.html'

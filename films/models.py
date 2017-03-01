@@ -14,3 +14,6 @@ class Film (models.Model):
     convo_author = models.CharField(max_length=1024, null=True)
     convo_audio = models.URLField(max_length=1024, null=True)
     convo_text = models.TextField(null=True)
+
+    def get_absolute_url(self):
+        return "/films/%s/" % self.slug

@@ -10,10 +10,10 @@ class Film (models.Model):
     description = models.TextField()
     director = models.CharField(max_length=1024)
     image = models.ImageField(upload_to="images/film_images")
-    trailer_embed = models.URLField(max_length=1024)
-    convo_author = models.CharField(max_length=1024, null=True)
-    convo_audio = models.URLField(max_length=1024, null=True)
-    convo_text = models.TextField(null=True)
+    trailer_embed = models.URLField(max_length=1024, null=True, blank=True)
+    convo_author = models.CharField(max_length=1024, null=True, blank=True)
+    convo_audio = models.URLField(max_length=1024, null=True, blank=True)
+    convo_text = models.TextField(null=True, blank=True)
 
     def get_absolute_url(self):
         return "/films/%s/" % self.slug

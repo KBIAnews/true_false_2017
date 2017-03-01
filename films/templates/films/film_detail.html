@@ -1,17 +1,28 @@
 {% extends 'films/base.html' %}
 
 {% block content %}
-        <div class="leader-image-contain">
-            <div class="leader-image-contents">
-                <img class="leader-image-img" src="{{ object.image.url }}" alt="{{ object.title }}">
-            </div>
-            <div class="leader-image-gradient">
+{#        <div class="leader-image-contain">#}
+{#            <div class="leader-image-contents">#}
+{#                <img class="leader-image-img" src="{{ object.image.url }}" alt="{{ object.title }}">#}
+{#            </div>#}
+{#            <div class="leader-image-gradient">#}
+{##}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#    <div class="float-above-leader">#}
+{#            <h1>{{ object.title }}</h1>#}
+{#    </div>#}
 
-            </div>
-        </div>
+    <div class="leader-image-background" style="background-image: url({{ object.image.url }});">
 
-    <div class="float-above-leader">
-            <h1>{{ object.title }}</h1>
+    <div class="leader-image-back-gradient"></div>
+    <h1 class="film-title">{{ object.title }}</h1>
+    <h2 class="film-director">Directed by {{ object.director }}</h2>
+    <p class="film-description">
+        {{ object.description }}
+    </p>
+
     </div>
 
 

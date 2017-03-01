@@ -2,8 +2,13 @@
 {% extends 'films/base.html' %}
 
 {% block content %}
-<h1>Films Playing at T/F</h1>
+<h1 class="site-title">Dive Into True/False 2017</h1>
 {% for film in object_list %}
-    <div class="moose">{{ film.title }}</div>
+    <div class="film-thumb" href="{{ film.get_absolute_url }}">
+        <a href="{{ film.get_absolute_url }}">
+            <img src="{{ film.image.url }}" alt="{{ film.title }} Poster" class="film-thumb-img">
+            <h1 class="film-thumb-title">{{ film.title }}</h1>
+        </a>
+    </div>
 {%  endfor %}
 {% endblock %}

@@ -3,3 +3,5 @@
 build/
 
 .idea/
+
+node_modules

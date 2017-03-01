@@ -1,8 +1,9 @@
 $gradient-transition-point: 60%;
 
-$leader-image-bg-height: 600px;
+$leader-image-bg-height: 450px;
 
 div.leader-image-background{
+  margin-top: 0.5rem;
   width:100%;
   height: $leader-image-bg-height;
   display: block;
@@ -64,4 +65,27 @@ p.film-description{
   h2.film-director{
     font-size: 1.2rem;
   }
+}
+
+div.film-conversation{
+  h2{
+    font-size: 2rem;
+    color: darken($gray-lighter, 5%);
+  }
+
+  h3{
+    font-size: 1.2rem;
+    color: darken($gray-lighter, 20%);
+  }
+
+  p{
+    color: darken($gray-lighter, 20%);
+  }
+}
+
+
+a.back-link{
+  color: darken($gray-lighter, 30%);
+  font-weight: lighter;
+  margin-bottom: 1rem;
 }

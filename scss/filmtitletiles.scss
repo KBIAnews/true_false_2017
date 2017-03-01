@@ -1,7 +1,17 @@
 $thumb-big-color: darken($gray-lighter, 20%);
 $thumb-width: 400px;
 
+div.container h1.site-title{
+  margin-left: 0rem;
+  font-size: 4rem;
+  font-weight: lighter;
+}
 
+div.container p.site-description{
+  margin-left: 0rem;
+  font-size: 1.2rem;
+  color: $thumb-big-color;
+}
 
 .film-thumb{
   margin: 5px;

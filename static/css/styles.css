@@ -5894,6 +5894,15 @@ div.container:first-of-type {
   header.kbia-top a.nav-trigger-button {
     margin-right: 1rem; } }
 
+div.credit {
+  border-top: 1px solid #424546;
+  margin-top: 1.5rem;
+  padding-top: 1rem; }
+  div.credit p {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #73787b; }
+
 body {
   background-color: #292b2c !important; }
 
@@ -5964,6 +5973,17 @@ div.film-conversation h3 {
 div.film-conversation p {
   color: #b5bcc0; }
 
+div.subsection {
+  margin-bottom: 3rem; }
+  div.subsection h2 {
+    font-size: 2rem;
+    color: #dee2e3; }
+  div.subsection h3 {
+    font-size: 1.2rem;
+    color: #b5bcc0; }
+  div.subsection p {
+    color: #b5bcc0; }
+
 a.back-link {
   color: #99a4a9;
   font-weight: lighter;
@@ -6003,7 +6023,7 @@ div.container p.site-description {
   .film-thumb:hover {
     border: solid 1px #d0d5d8; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 815px) {
   .film-thumb {
     width: 100%;
     height: auto; }
@@ -6020,7 +6040,7 @@ div.container p.site-description {
   background-color: #292b2c;
   background-color: rgba(41, 43, 44, 0.9);
   overflow-x: hidden;
-  transition: 0.5s; }
+  transition: 0.2s; }
 
 .overlay-content {
   position: relative;

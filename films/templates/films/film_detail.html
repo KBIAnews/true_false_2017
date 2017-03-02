@@ -28,7 +28,7 @@
     </div>
 
         {% if object.convo_author %}
-        <div class="film-conversation">
+        <div class="film-conversation subsection">
             <h2>A Conversation about <em>{{ object.title }}</em></h2>
             <h3>{{ object.convo_with }} Interviewed by KBIA's {{ object.convo_author }}</h3>
             <audio controls preload="metadata" style="
@@ -43,6 +43,15 @@
             </audio>
             <div class="convo-text">
                 {{ object.convo_text | linebreaks }}
+            </div>
+        </div>
+        {% endif %}
+
+    {% if object.trailer_embed %}
+        <div class="film-trailer subsection">
+            <h2>Watch a Preview</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="{{ object.trailer_embed }}" frameborder="0" class="embed-responsive-item"></iframe>
             </div>
         </div>
         {% endif %}

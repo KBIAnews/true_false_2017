@@ -10,6 +10,7 @@
     This year, KBIA encourages you to take a deep look at some of the films from the True/False Film Fest with the help of our filmmaker conversations and more. When you're done, keep the festival going all year with the new
         <a href="https://itunes.apple.com/us/podcast/the-true-false-podcast/id1206949858?mt=2">True/False Podcast</a>.
     </p>
+    <div class="film-thumb-list clearfix">
 {% for film in object_list %}
     <div class="film-thumb" href="{{ film.get_absolute_url }}">
         <a href="{{ film.get_absolute_url }}">
@@ -18,4 +19,5 @@
         </a>
     </div>
 {%  endfor %}
+    </div>
 {% endblock %}

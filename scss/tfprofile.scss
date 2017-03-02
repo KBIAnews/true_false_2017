@@ -83,6 +83,24 @@ div.film-conversation{
   }
 }
 
+div.subsection{
+  margin-bottom: 3rem;
+
+  h2{
+    font-size: 2rem;
+    color: darken($gray-lighter, 5%);
+  }
+
+  h3{
+    font-size: 1.2rem;
+    color: darken($gray-lighter, 20%);
+  }
+
+  p{
+    color: darken($gray-lighter, 20%);
+  }
+}
+
 
 a.back-link{
   color: darken($gray-lighter, 30%);

@@ -1,5 +1,15 @@
 {% extends 'films/base.html' %}
 
+{% block metablock %}
+    <meta property="og:title" content="{{ object.name }} - True/False - KBIA">
+    <meta property="og:image" content="http://truefalse.kbia.fm/static/img/ogimg.jpg"/>
+    <meta property="og:site_name" content="KBIA">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@kbia">
+    <meta name="twitter:title" content="{{ object.name }} - True/False - KBIA">
+    <meta name="twitter:image:src" content="http://truefalse.kbia.fm/static/img/ogimg.jpg">
+{% endblock %}
+
 {% block injectable %}
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYP_Wu9ZZfY6uRxZWdr4By4rtoh00rFLs"></script>
 
@@ -67,7 +77,7 @@
     </div>
     {%  if screenings_list %}
         <div class="film-screenings subsection">
-            <h2>Film Screenings</h2>
+            <h2>Screenings at This Venue</h2>
             <div class="screening-gallery clearfix">
                 {% for screening in screenings_list %}
                     <div class="screening-block">

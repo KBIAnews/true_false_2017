@@ -2,6 +2,8 @@ $gradient-transition-point: 60%;
 
 $leader-image-bg-height: 450px;
 
+$leader-image-bg-sm-height: 350px;
+
 div.leader-image-background{
   margin-top: 0.5rem;
   width:100%;
@@ -64,6 +66,18 @@ p.film-description{
 
   h2.film-director{
     font-size: 1.2rem;
+  }
+
+  div.leader-image-background{
+    height: $leader-image-bg-sm-height;
+  }
+
+  div.leader-image-back-gradient {
+    height: $leader-image-bg-sm-height;
+  }
+
+  h1.film-title{
+    padding-top: 5rem;
   }
 }
 

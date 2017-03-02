@@ -2,6 +2,16 @@
 
 {% block title %}{{ object.title }}{% endblock %}
 
+{% block metablock %}
+    <meta property="og:title" content="{{ object.title }} - True/False - KBIA">
+    <meta property="og:image" content="http://truefalse.kbia.fm{{ object.image.url }}"/>
+    <meta property="og:site_name" content="KBIA">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@kbia">
+    <meta name="twitter:title" content="{{ object.title }} - True/False - KBIA">
+    <meta name="twitter:image:src" content="http://truefalse.kbia.fm{{ object.image.url }}">
+{% endblock %}
+
 {% block content %}
 {#        <div class="leader-image-contain">#}
 {#            <div class="leader-image-contents">#}

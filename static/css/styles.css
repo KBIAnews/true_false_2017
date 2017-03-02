@@ -5960,7 +5960,13 @@ p.film-description {
     padding-top: 150px;
     font-size: 2rem; }
   h2.film-director {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  div.leader-image-background {
+    height: 350px; }
+  div.leader-image-back-gradient {
+    height: 350px; }
+  h1.film-title {
+    padding-top: 5rem; } }
 
 div.film-conversation h2 {
   font-size: 2rem;

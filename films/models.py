@@ -16,6 +16,9 @@ class Film (models.Model):
     convo_text = models.TextField(null=True, blank=True)
     convo_with = models.CharField(max_length=1024, null=True, blank=True)
 
+    class Meta:
+        ordering = ['slug']
+
     def get_absolute_url(self):
         return "/films/%s/" % self.slug
 
@@ -40,6 +43,9 @@ class Screening (models.Model):
     film = models.ForeignKey(Film)
     venue = models.ForeignKey(Venue)
     screening_time = models.DateTimeField()
+
+    class Meta:
+        ordering = ['screening_time']
 
     def __str__(self):
         return "%s %s" % (self.film.title, self.screening_time.strftime('%Y-%m-%d %H:%M'))

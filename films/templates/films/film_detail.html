@@ -26,7 +26,20 @@
             {{ object.description }}
         </p>
     </div>
-
+        {%  if screenings_list %}
+            <div class="film-screenings subsection">
+                <h2>Film Screenings</h2>
+            <div class="screening-gallery clearfix">
+            {% for screening in screenings_list %}
+                <div class="screening-block">
+                    <span class="screening-liner screening-date">{{ screening.screening_time|date:"l (F j)" }}</span>
+                    <span class="screening-liner screening-time">{{ screening.screening_time|date:"P" }}</span>
+                    <span class="screening-liner screening-location"><a href="{{ screening.venue.get_absolute_url }}">{{ screening.venue.name }}</a></span>
+                </div>
+            {% endfor %}
+            </div>
+            </div>
+        {% endif %}
         {% if object.convo_author %}
         <div class="film-conversation subsection">
             <h2>A Conversation about <em>{{ object.title }}</em></h2>

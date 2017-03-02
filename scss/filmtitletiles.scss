@@ -45,6 +45,10 @@ div.container p.site-description{
     text-decoration: none !important;
   }
 
+  a:hover{
+    text-decoration: none !important;
+  }
+
   &:hover{
     border: solid 1px lighten($thumb-big-color, 10%);
   }

@@ -133,4 +133,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Django Bakery Settings
 BUILD_DIR = os.path.join(PROJECT_ROOT, 'build')
 BAKERY_VIEWS= ('films.views.FilmListView',
-               'films.views.FilmDetailView',)
+               'films.views.FilmDetailView',
+               'films.views.VenueDetailView',)

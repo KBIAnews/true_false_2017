@@ -5989,6 +5989,32 @@ a.back-link {
   font-weight: lighter;
   margin-bottom: 1rem; }
 
+div.screening-gallery {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem; }
+  div.screening-gallery div.screening-block {
+    border: 1px solid #4d575c;
+    width: 250px;
+    height: 5.2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    float: left; }
+    div.screening-gallery div.screening-block span.screening-liner {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      display: block;
+      color: #b5bcc0; }
+    div.screening-gallery div.screening-block span.screening-date {
+      background-color: #5a5f61;
+      color: #dee2e3; }
+
+h1.venue-name {
+  font-weight: lighter;
+  margin-top: 1.5rem; }
+
 div.container h1.site-title {
   margin-left: 0rem;
   font-size: 4rem;
@@ -6019,6 +6045,8 @@ div.container p.site-description {
       margin-bottom: 0rem;
       font-size: 1.3rem; }
   .film-thumb a:hover h1.film-thumb-title {
+    text-decoration: none !important; }
+  .film-thumb a:hover {
     text-decoration: none !important; }
   .film-thumb:hover {
     border: solid 1px #d0d5d8; }
